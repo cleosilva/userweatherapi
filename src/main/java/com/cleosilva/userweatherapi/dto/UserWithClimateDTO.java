@@ -1,23 +1,10 @@
-package com.cleosilva.userweatherapi.model;
+package com.cleosilva.userweatherapi.dto;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-
-@Entity
-public class User {
-    // id, nome, email, cidade
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+public class UserWithClimateDTO {
     private String name;
     private String email;
     private String city;
-
-    public Long getId() {
-        return id;
-    }
+    private ClimateDTO climateDTO;
 
     public String getName() {
         return name;
@@ -41,5 +28,13 @@ public class User {
 
     public void setCity(String city) {
         this.city = city;
+    }
+
+    public ClimateDTO getClimateDTO() {
+        return climateDTO;
+    }
+
+    public void setClimateDTO(ClimateDTO climateDTO) {
+        this.climateDTO = climateDTO;
     }
 }
