@@ -4,7 +4,7 @@ public class UserWithClimateDTO {
     private String name;
     private String email;
     private String city;
-    private ClimateDTO climateDTO;
+    private ClimateDTO climate;
 
     public String getName() {
         return name;
@@ -31,10 +31,12 @@ public class UserWithClimateDTO {
     }
 
     public ClimateDTO getClimateDTO() {
-        return climateDTO;
+        return climate;
     }
 
-    public void setClimateDTO(ClimateDTO climateDTO) {
-        this.climateDTO = climateDTO;
+    public void setClimateDTO(ClimateDTO climate) {
+        this.climate = climate;
     }
+
+
 }
