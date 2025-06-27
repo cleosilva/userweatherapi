@@ -103,6 +103,14 @@ Retorna os dados do usuário e o clima atual na cidade cadastrada:
 
 OpenWeatherMap API
 
+### 📄 Documentação com Swagger
+
+Cadastro usuário
+![img.png](img.png)
+
+Busca por Id retornando dados e clima da cidade
+![img_1.png](img_1.png)
+
 ✨ Possíveis Melhorias Futuras
 Estratégia com múltiplas fontes de clima (Strategy)
 
@@ -110,7 +118,6 @@ Estratégia com múltiplas fontes de clima (Strategy)
 
 * Testes com JUnit e Mockito
 
-* Swagger para documentação
 
 💻 Autor
 
