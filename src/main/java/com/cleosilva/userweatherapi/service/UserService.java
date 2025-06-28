@@ -21,11 +21,7 @@ public class UserService {
         UserModel user = userRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException(("User not found!")));
 
-        System.out.println("user City" + user.getCity());
-
         ClimateDTO climate = climateFacade.getClimate(user.getCity());
-
-        System.out.println("climate " + climate.getDescription());
 
         UserWithClimateDTO dto = new UserWithClimateDTO();
         dto.setName(user.getName());
