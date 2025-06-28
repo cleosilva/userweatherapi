@@ -31,3 +31,9 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Arquivos sensíveis (coloque o application.properties aqui!)
+src/main/resources/application.properties
+
+# Permite versionar um modelo para configurar localmente
+!src/main/resources/application-example.properties
